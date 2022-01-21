@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  background: url("images/mosque.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main img {
+  width: 110rem;
+  margin-top: -35rem;
+  margin-left: -16.6rem;
+  -webkit-animation-name: scaling;
+          animation-name: scaling;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main .main-animation img {
+  position: relative;
+  z-index: 1;
+}
+
+@-webkit-keyframes scaling {
+  from {
+    width: 110rem;
+  }
+  to {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-left: -23.5rem;
+    margin-top: -31.3rem;
+  }
+}
+
+@keyframes scaling {
+  from {
+    width: 110rem;
+  }
+  to {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-left: -23.5rem;
+    margin-top: -31.3rem;
+  }
+}
+
+.main .text {
+  color: #bf364f;
+  letter-spacing: 7.5px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 300px/242px var(--unnamed-font-family-scrivano);
+  font: normal normal normal 200px/242px Scrivano;
+  text-align: left;
+  text-transform: capitalize;
+  opacity: 1;
+  line-height: 1;
+  -webkit-animation-name: text-animation;
+          animation-name: text-animation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes text-animation {
+  from {
+    margin-left: 100rem;
+    margin-top: -70rem;
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+    position: absolute;
+    margin-left: 27.5rem;
+    margin-top: -72.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes text-animation {
+  from {
+    margin-left: 100rem;
+    margin-top: -70rem;
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+    position: absolute;
+    margin-left: 27.5rem;
+    margin-top: -72.5rem;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=lahore.css.map */
