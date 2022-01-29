@@ -106,4 +106,95 @@
     opacity: 1;
   }
 }
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  background: #317c34;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  background: #317c34;
+  border-radius: 71px;
+  width: 57%;
+  padding: 0.75rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  color: #ffffff;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.btn li.btn:hover {
+  background: #fcfbed;
+  color: #317c34;
+  text-align: center;
+}
+
+.btn .btn.active {
+  background: #fcfbed;
+  color: #317c34;
+}
+
+.btn i {
+  color: #ffffff;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.btn a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.625rem;
+  border-radius: 1.5rem;
+}
+
+.cart {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  padding: 1.5rem;
+  background: #f1dd88;
+  position: absolute;
+  margin-left: 57.5rem;
+  margin-top: -1rem;
+  font-family: Scrivano, Regular;
+}
+
+.cart a {
+  color: #317c34;
+}
 /*# sourceMappingURL=lahore.css.map */

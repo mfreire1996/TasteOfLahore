@@ -23,12 +23,10 @@
   }
 
   .main-animation {
-
     img {
       position: relative;
       z-index: 1;
     }
-
   }
 
   @keyframes scaling {
@@ -83,13 +81,85 @@
       // color: green;
     }
   }
+}
 
-  // .lahore-button {
-  //   top: 899px;
-  //   left: 1147px;
-  //   width: 266px;
-  //   height: 65px;
-  //   background: transparent url('img/Hero-Learn Lahore Button-Unhovered.png') 0% 0% no-repeat padding-box;
-  //   opacity: 1;
-  // }
+
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  background: hsl(122, 43%, 34%);
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  background: hsl(122, 43%, 34%);
+  border-radius: 71px;
+  width: 57%;
+  padding: 0.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  li.btn:hover {
+    background: #fcfbed;
+    color: hsl(122, 43%, 34%);
+    text-align: center;
+  }
+
+  .btn.active {
+    background: #fcfbed;
+    color: hsl(122, 43%, 34%);
+  }
+
+  i {
+    color: #ffffff;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    padding: 0.625rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.cart {
+  clip-path: circle();
+  padding: 1.5rem;
+  background: #f1dd88;
+  position: absolute;
+  margin-left: 57.5rem;
+  margin-top: -1rem;
+  font-family: Scrivano, Regular;
+
+  a {
+    color: hsl(122, 43%, 34%);
+  }
 }

@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Taste of Lahore</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://use.typekit.net/hld1ihr.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="lahore.css" />
-  </head>
 
-  <body>
-    <div class="main">
-      <figure class="main-animation">
-        <img src="images/crescent.png" />
-      </figure>
-      <h1 class="text">
-        Flavors <br />
-        Of Home
-      </h1>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Taste of Lahore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://use.typekit.net/hld1ihr.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" media="screen" href="lahore.css" />
+</head>
 
-      <button class="lahore-button">Learn Lahore</button>
-    </div>
+<body>
+  <div class="main">
+    <figure class="main-animation">
+      <img src="images/crescent.png" />
+    </figure>
+    <h1 class="text">
+      Flavors <br />
+      Of Home
+    </h1>
+  </div>
 
-    <script src="lahore.js"></script>
-  </body>
+  <div id="myBtnContainer">
+
+
+    <ul class="btn">
+      <li>
+        <a href="#">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </li>
+      <!-- <button class="btn active" onclick="filterSelection('all')"> Show all</button> -->
+      <li class="btn" onclick="filterSelection('nashta')">Nashta</li>
+      <li class="btn" onclick="filterSelection('specialties')">
+        Specialties
+      </li>
+      <li class="btn" onclick="filterSelection('barbeque')">
+        Barbeque
+      </li>
+      <li class="btn" onclick="filterSelection('mithai')">Mithai</li>
+      <li class="btn" onclick="filterSelection('beverages')">
+        Beverages
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </li>
+      <button class="cart"><a href="#">Cart</a></button>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="filterDiv nashta">Nashta</div>
+    <div class="filterDiv specialties">Specialties</div>
+    <div class="filterDiv barbeque">Barbeque</div>
+    <div class="filterDiv mithai">Mithai</div>
+    <div class="filterDiv beverages">Beverages</div>
+  </div>
+
+  <script src="lahore.js"></script>
+</body>
+
 </html>
